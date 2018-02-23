@@ -3,4 +3,3 @@
 id_rsa
 .DS_Store
 .git
-application/config/config.php
