@@ -3,7 +3,4 @@
 id_rsa
 .DS_Store
 .git
-application/config/database.php
-application/config/email.php
 application/config/config.php
-application/third_party/config/ion_auth.php
