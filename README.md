@@ -6,12 +6,12 @@ In Codeigniter, Ion_auth has beeninstalled a third_party in proper folder. So it
 
 ## installation
 
-1 Download or clone **Codeigniter-Ioh_auth-Gentelella** to your site.
-2 There is only four configuration files:
-    1 application/config/config.php
-    2 application/config/database.php
-    2 application/config/email.php
-    4 application/third_party/ion_auth/config/ion_auth.php
+1. Download or clone **Codeigniter-Ioh_auth-Gentelella** to your site.
+2. There is only four configuration files:
+    1. application/config/config.php
+    2. application/config/database.php
+    2. application/config/email.php
+    4. application/third_party/ion_auth/config/ion_auth.php
 
 ### application/config/config.php
 
@@ -110,7 +110,7 @@ $config['recheck_timer']              = 0;                   /* The number of se
 																recommend a higher value, as this would affect performance */
 ```
 
-Set (or let) manual activation as TRUE, this will activate new users by mail. Mind the _admin_email_, do you need a provide a **no reply address**, it is your choice any way.
+Set (or let) manual activation as TRUE, this will activate new users by mail. Mind the _admin_email_, do you need provide a **no reply address**?, it is your choice any way.
 
 In the same file, configure too _smtp_host_, _smtp_user_ and _smtp_pass_ at least. But mind your server configuration needs.
 
