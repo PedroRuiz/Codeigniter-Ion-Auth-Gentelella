@@ -56,11 +56,11 @@
 
             <?php $this->load->view('inc/sidebar_menu')?>
 
-            
+
           </div>
         </div>
 
-        <?php $this->load->view('inc/top_menu')?>
+        <?php $this->load->view('inc/top_menu');?>
 
         <!-- page content -->
         <div class="right_col" role="main">

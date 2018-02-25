@@ -42,6 +42,9 @@ Class MY_Controller extends CI_Controller
     protected $previous_controller_name;
     protected $previous_action_name;
 
+    protected $user;
+    protected $admin;
+    protected $user_groups;
 
 
     /**
@@ -59,7 +62,21 @@ Class MY_Controller extends CI_Controller
         */
         $this->load->add_package_path(APPPATH.'third_party/ion_auth');
         $this->load->library('ion_auth');
-        if(! $this->ion_auth->logged_in() ) redirect(base_url('auth/login/action.html'),'refresh');
+        if(! $this->ion_auth->logged_in() )
+        {
+            redirect(base_url('auth/login/action.html'),'refresh');
+        }
+        else
+        {
+            $this->user             = $this->ion_auth->user()->row();
+            $this->admin            = $this->ion_auth->is_admin();
+
+            foreach ($this->ion_auth->get_users_groups()->result() as  $value)
+            {
+                $this->user_groups[]=$value->name;
+            }
+        }
+
 
         /*
         | full path to gentelella VARIABLES
@@ -199,6 +216,7 @@ Class MY_Controller extends CI_Controller
             'content'           =>  $content,
             'js'                =>  $this->js,
             'extra_js'          =>  (! is_null($this->extra_js) ) ? $this->extra_js : NULL,
+
         ));
     }
 
