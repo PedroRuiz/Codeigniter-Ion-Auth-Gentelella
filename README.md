@@ -5,6 +5,33 @@ As the title suggests, this project integrates in the Codeigniter framework, the
 In Codeigniter, Ion_auth has beeninstalled a third_party in proper folder. So it keeps your code clean. **Migration has been configured as automatic and in sequential mode**. In this way **you don't need care the installation any way**.
 
 ## installation
+After declare your config.php's base url 
+```php
+/*
+|--------------------------------------------------------------------------
+| Base Site URL
+|--------------------------------------------------------------------------
+|
+| URL to your CodeIgniter root. Typically this will be your base URL,
+| WITH a trailing slash:
+|
+|	http://example.com/
+|
+| WARNING: You MUST set this value!
+|
+| If it is not set, then CodeIgniter will try guess the protocol and path
+| your installation, but due to security concerns the hostname will be set
+| to $_SERVER['SERVER_ADDR'] if available, or localhost otherwise.
+| The auto-detection mechanism exists only for convenience during
+| development and MUST NOT be used in production!
+|
+| If you need to allow multiple domains, remember that this file is still
+| a PHP script and you can easily do that on your own.
+|
+*/
+$config['base_url'] = 'https://this_is_my_awsome_url';
+```
+Just do:
 
 1. Download or clone **Codeigniter-Ioh_auth-Gentelella** to your site.
 2. There is only four configuration files:
