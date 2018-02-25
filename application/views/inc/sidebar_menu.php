@@ -126,14 +126,20 @@
 
 <!-- /menu footer buttons -->
 <div class="sidebar-footer hidden-small">
-  <a data-toggle="tooltip" data-placement="top" title="Settings">
+  <?php if($this->ion_auth->is_admin()):?>
+  <a data-toggle="tooltip" data-placement="top" title="Users"  href="<?php echo base_url("auth/action.html")?>">
     <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
   </a>
-  <a data-toggle="tooltip" data-placement="top" title="FullScreen">
-    <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+  <?php else:?>
+  <a data-toggle="tooltip" data-placement="top" title="You aren't administrator"  href="#">
+    <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
   </a>
-  <a data-toggle="tooltip" data-placement="top" title="Lock">
-    <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+  <?php endif;?>
+  <a data-toggle="tooltip" data-placement="top" title="Home" href="<?php echo base_url()?>">
+    <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+  </a>
+  <a data-toggle="tooltip" data-placement="top" title="Edit Profile" href="<?php echo base_url("auth/edit_user/{$this->ion_auth->user()->row()->id}/action.html")?>">
+    <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
   </a>
   <a data-toggle="tooltip" data-placement="top" title="Logout" href="<?php echo base_url('auth/logout/action.html')?>">
     <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
