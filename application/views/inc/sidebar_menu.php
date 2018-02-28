@@ -25,6 +25,13 @@
   <div class="menu_section">
     <h3>General</h3>
     <ul class="nav side-menu">
+
+
+
+        <li><a href="<?php echo base_url();?>"><i class="fa fa-home"></i> Home </span></a></li>
+
+        <li><a href="<?php echo base_url('testpdf');?>"><i class="fa fa-file-pdf-o"></i> testpdf </span></a></li>
+<?php /*
       <li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
         <ul class="nav child_menu">
           <li><a href="index.html">Dashboard</a></li>
@@ -32,7 +39,7 @@
           <li><a href="index3.html">Dashboard3</a></li>
         </ul>
       </li>
-      <li><a><i class="fa fa-edit"></i> Forms <span class="fa fa-chevron-down"></span></a>
+      <li class=""><a><i class="fa fa-edit"></i> Forms <span class="fa fa-chevron-down"></span></a>
         <ul class="nav child_menu">
           <li><a href="form.html">General Form</a></li>
           <li><a href="form_advanced.html">Advanced Components</a></li>
@@ -118,6 +125,7 @@
         </ul>
       </li>
       <li><a href="javascript:void(0)"><i class="fa fa-laptop"></i> Landing Page <span class="label label-success pull-right">Coming Soon</span></a></li>
+*/?>
     </ul>
   </div>
 
