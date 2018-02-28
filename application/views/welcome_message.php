@@ -31,7 +31,7 @@
   <body class="nav-md">
     <div class="container body">
       <div class="main_container">
-        
+
 
             <?php $this->load->view('inc/sidebar_menu')?>
 
@@ -91,6 +91,7 @@
                     <div class="clearfix"></div>
                   </div>
                   <div class="x_content">
+    
                       <?php echo (isset($content)) ? $content : 'Add content to the page';?>
                   </div>
                 </div>
