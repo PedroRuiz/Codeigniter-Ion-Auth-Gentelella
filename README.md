@@ -1,4 +1,4 @@
-# Codeigniter-Ioh_auth-Gentelella
+# Codeigniter-Ion_auth-Gentelella
 As the title suggests, this project integrates in the Codeigniter framework, the Ben Edmunds' Ion-auth autentication system and Gentelella, Aigars Silkalns' Gentelella, an free to use Bootstrap admin template. Too it uses [CodeIgniter-FPDF](https://github.com/PedroRuiz/CodeIgniter-FPDF) to treat, and create PDF files.
 ## Description
 In Codeigniter, Ion_auth has beeninstalled a third_party in proper folder. So it keeps your code clean. **Migration has been configured as automatic and in sequential mode**. In this way **you don't need care the installation any way**.
