@@ -321,7 +321,11 @@ class Auth extends CI_Controller
 			{
 				// do we have a valid request?
 				//if ($this->_valid_csrf_nonce() === FALSE || $user->id != $this->input->post('user_id'))
+<<<<<<< HEAD
                 if ( 1===1 || $user->id != $this->input->post('id'))
+=======
+                if ( 1===1 || $user->id != $this->input->post('user_id'))
+>>>>>>> develop
 				{
 
 					// something fishy might be up
