@@ -172,9 +172,9 @@ $config['email_config'] = array(
 );
 
 ## Testing the project
-url :[https://gentelella.pedroruizhidalgo.es](https://genelella.pedroruizhidalgo.es)
-user: **admin@admin.com**
-password: **password**
+url : [https://gentelella.pedroruizhidalgo.es](https://genelella.pedroruizhidalgo.es)
+user: admin@admin.com
+password: password
 
 ```
 
