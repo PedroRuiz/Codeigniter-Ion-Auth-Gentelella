@@ -39,6 +39,7 @@ class Welcome extends MY_Controller
         $this->users_this_week      =   4;
         $this->users_week_percent   =  (100 * $this->users_this_week) / $this->total_users;
     }
+
 	public function index()
 	{
         $this->title="It goes!";
