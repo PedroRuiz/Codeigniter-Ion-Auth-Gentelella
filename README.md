@@ -170,16 +170,17 @@ $config['email_config'] = array(
 	'bcc_batch_mode' 	=> FALSE,
 	'bcc_batch_size' 	=> 200,
 );
-
-## Testing the project
-url : https://genelella.pedroruizhidalgo.es
-user: admin@admin.com
-password: password
-
 ```
+## Testing the project
+url : [gentelella.pedroruizhidalgo.es](https://genelella.pedroruizhidalgo.es)
+user: **admin@admin.com**
+password: **password**
+
 
 ```
 Pedro Ruiz Hidalgo
 @pedroruizhidalg
+
+Coding the worls since 1983
 
 ```
