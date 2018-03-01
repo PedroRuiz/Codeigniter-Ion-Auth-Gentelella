@@ -29,11 +29,13 @@
 
 
         <li><a href="<?php echo base_url();?>"><i class="fa fa-home"></i> Home </span></a></li>
-
+<?php if ( $admin ):?>
         <li><a href="<?php echo base_url('auth');?>"><i class="fa fa-unlock"></i> Users </span></a></li>
-        <?php if ( $admin ):?>
-        <li><a href="<?php echo base_url('testpdf');?>"><i class="fa fa-file-pdf-o"></i> testpdf </span></a></li>
-        <?php endif;?>
+<?php else:?>
+        <li><a><i class="fa fa-lock"></i> Users </span></a></li>
+<?php endif;?>
+        <li><a <a href="<?php echo base_url('testpdf');?>"><i class="fa fa-file-pdf-o"></i> testpdf </span></a></li>
+
 <?php /*
       <li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
         <ul class="nav child_menu">

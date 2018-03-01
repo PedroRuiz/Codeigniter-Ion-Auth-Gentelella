@@ -17,9 +17,15 @@
             <?php if($this->ion_auth->is_admin()) :?>
             <li>
               <a href="<?php echo base_url('auth/action.html');?>">
-                <span>Users</span>
+                <i class="fa fa-unlock"></i><span> Users</span>
               </a>
             </li>
+            <?php else:?>
+                <li>
+                  <a>
+                    <i class="fa fa-lock"></i><span> Users</span>
+                  </a>
+                </li>
             <?php endif;?>
             <li><a href="<?php echo base_url('auth/logout/action.html');?>"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
           </ul>

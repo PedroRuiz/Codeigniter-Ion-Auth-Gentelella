@@ -25,11 +25,11 @@
       <div class="main_container">
 
 
-            <?php $this->load->view('inc/sidebar_menu',array('admin'=>TRUE))?>
+            <?php $this->load->view('inc/sidebar_menu',array('admin'=>$this->ion_auth->is_admin()))?>
           </div>
         </div>
 
-        <?php $this->load->view('inc/top_menu')?>
+        <?php $this->load->view('inc/top_menu',array('admin'=>$this->ion_auth->is_admin()))?>
 
         <!-- page content -->
         <div class="right_col" role="main">
