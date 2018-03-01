@@ -1,7 +1,31 @@
+<<<<<<< HEAD
+=======
+*/config/development
+*/logs/log-*.php
+!*/logs/index.html
+*/cache/*
+!*/cache/index.html
+!*/cache/.htaccess
+
+user_guide_src/build/*
+user_guide_src/cilexer/build/*
+user_guide_src/cilexer/dist/*
+user_guide_src/cilexer/pycilexer.egg-info/*
+
+#codeigniter 3
+application/logs/*
+!application/logs/index.html
+!application/logs/.htaccess
+/vendor/
+
+>>>>>>> ece0d2adce8bff88f11407d13566d14c85f80350
 application/third_party/config/ion_auth.php
 application/third_party/ion_auth/config/ion_auth.php
 application/config/config.php
 application/config/database.php
 application/config/email.php
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> ece0d2adce8bff88f11407d13566d14c85f80350
