@@ -1,10 +1,20 @@
 # Codeigniter-Ion_auth-Gentelella
+[Spanish version](https://github.com/PedroRuiz/Codeigniter-Ion-Auth-Gentelella/blob/upload/README.es.md)
+
 As the title suggests, this project integrates in the Codeigniter framework, the Ben Edmunds' Ion-auth autentication system and Gentelella, Aigars Silkalns' Gentelella, an free to use Bootstrap admin template. Too it uses [CodeIgniter-FPDF](https://github.com/PedroRuiz/CodeIgniter-FPDF) to treat, and create PDF files.
 ## Description
 In Codeigniter, Ion_auth has beeninstalled a third_party in proper folder. So it keeps your code clean. **Migration has been configured as automatic and in sequential mode**. In this way **you don't need care the installation any way**.
 
-## installation
-After declare your config.php's base url
+## Installation
+Just do:
+
+1. Download or clone **Codeigniter-Ion_auth-Gentelella** to your site.
+2. There is only four configuration files:
+    1. application/config/config.php
+    2. application/config/database.php
+    2. application/config/email.php
+    4. application/third_party/ion_auth/config/ion_auth.php
+
 ```php
 /*
 |--------------------------------------------------------------------------
@@ -30,15 +40,6 @@ After declare your config.php's base url
 */
 $config['base_url'] = 'https://this_is_my_awsome_url';
 ```
-Just do:
-
-1. Download or clone **Codeigniter-Ioh_auth-Gentelella** to your site.
-2. There is only four configuration files:
-    1. application/config/config.php
-    2. application/config/database.php
-    2. application/config/email.php
-    4. application/third_party/ion_auth/config/ion_auth.php
-
 ### application/config/config.php
 
 Change in the line 327 your _encription_key_ as follow:
