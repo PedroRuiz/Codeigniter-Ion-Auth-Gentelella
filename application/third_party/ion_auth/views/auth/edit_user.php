@@ -23,9 +23,9 @@
   <body class="nav-md">
     <div class="container body">
       <div class="main_container">
-        
 
-            <?php $this->load->view('inc/sidebar_menu')?>
+
+            <?php $this->load->view('inc/sidebar_menu',array('admin'=>TRUE))?>
           </div>
         </div>
 

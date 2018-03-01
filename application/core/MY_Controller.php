@@ -207,6 +207,7 @@ Class MY_Controller extends CI_Controller
             'project_name'      =>  $this->project_name,
             'page_title'        =>  $this->page_title,
             'collapse'          =>  $this->collapse,
+            'admin'             =>  $this->admin,
             'settings'          =>  $this->settings,
             'close'             =>  $this->close,
             'setting_actions'   =>  $this->setting_actions,
