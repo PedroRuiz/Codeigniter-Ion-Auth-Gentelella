@@ -23,15 +23,46 @@
   <body class="nav-md">
     <div class="container body">
       <div class="main_container">
+<<<<<<< HEAD
 
 
             <?php $this->load->view('inc/sidebar_menu',array('admin'=>$this->ion_auth->is_admin()))?>
+=======
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Gentelella Alela!</span></a>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <!-- menu profile quick info -->
+            <div class="profile clearfix">
+              <div class="profile_pic">
+                <img src="images/img.jpg" alt="..." class="img-circle profile_img">
+              </div>
+              <div class="profile_info">
+                <span>Welcome,</span>
+                <h2>John Doe</h2>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <!-- /menu profile quick info -->
+
+            <br />
+
+            <?php $this->load->view('inc/sidebar_menu');?>
+>>>>>>> 8385f44197c203c037676d0ba19bafd96d1d7b90
 
 
           </div>
         </div>
 
+<<<<<<< HEAD
         <?php $this->load->view('inc/top_menu',array('admin'=>$this->ion_auth->is_admin()))?>
+=======
+        <?php $this->load->view('inc/top_menu');?>
+>>>>>>> 8385f44197c203c037676d0ba19bafd96d1d7b90
 
         <!-- page content -->
         <div class="right_col" role="main">

@@ -1,4 +1,8 @@
 application/config/config.php
 application/config/database.php
 application/config/email.php
+<<<<<<< HEAD
 application/third_party/config/ion_auth.php
+=======
+application/third_party/ion_auth/config/ion_auth.php
+>>>>>>> 8385f44197c203c037676d0ba19bafd96d1d7b90
