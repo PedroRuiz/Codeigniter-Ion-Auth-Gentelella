@@ -46,6 +46,8 @@ Class MY_Controller extends CI_Controller
     protected $admin;
     protected $user_groups;
 
+    private $extra_data      = NULL;
+
 
     /**
     * class Constructor
@@ -195,6 +197,21 @@ Class MY_Controller extends CI_Controller
     }
 
     /**
+    * set this->$extra_data
+    *
+    * $array    = array(
+    *   array('key'=>'value','key2'=>'value2'),
+    * );
+    *
+    * @param array
+    * @return void
+    **/
+    function set_extra_data($array)
+    {
+        $this->extra_data = $array;
+    }
+
+    /**
     * render a view
     *
     * @param string
@@ -212,12 +229,12 @@ Class MY_Controller extends CI_Controller
             'close'             =>  $this->close,
             'setting_actions'   =>  $this->setting_actions,
             'css'               =>  $this->css,
-            'extra_css'         =>  (! is_null($this->extra_css) ) ? $this->extra_css : NULL,
+            'extra_css'         =>  ( ! is_null($this->extra_css) ) ? $this->extra_css : NULL,
             'title'             =>  $this->title,
             'content'           =>  $content,
             'js'                =>  $this->js,
-            'extra_js'          =>  (! is_null($this->extra_js) ) ? $this->extra_js : NULL,
-
+            'extra_js'          =>  ( ! is_null($this->extra_js) ) ? $this->extra_js : NULL,
+            'extra_data'        =>  ( ! is_null($this->extra_data) ) ? $this->extra_data : NULL
         ));
     }
 
