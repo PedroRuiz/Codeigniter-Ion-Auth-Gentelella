@@ -178,7 +178,9 @@ $config['email_config'] = array(
 
 ## Probando el proyecto
 url: [gentelella.pedroruizhidalgo.es](https://gentelella.pedroruizhidalgo.es)
+
 user: **admin@admin.com**
+
 password: **password**
 
 ```
