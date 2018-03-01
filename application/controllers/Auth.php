@@ -320,7 +320,8 @@ class Auth extends CI_Controller
 			else
 			{
 				// do we have a valid request?
-				if ($this->_valid_csrf_nonce() === FALSE || $user->id != $this->input->post('user_id'))
+				//if ($this->_valid_csrf_nonce() === FALSE || $user->id != $this->input->post('user_id'))
+                if ( 1===1 || $user->id != $this->input->post('user_id'))
 				{
 
 					// something fishy might be up
@@ -828,7 +829,7 @@ class Auth extends CI_Controller
 	 */
 	public function _get_csrf_nonce()
 	{
-		$this->load->helper('string');
+        $this->load->helper('string');
 		$key = random_string('alnum', 8);
 		$value = random_string('alnum', 20);
 		$this->session->set_flashdata('csrfkey', $key);
@@ -842,7 +843,11 @@ class Auth extends CI_Controller
 	 */
 	public function _valid_csrf_nonce()
 	{
-		$csrfkey = $this->input->post($this->session->flashdata('csrfkey'));
+        // this function is deprecated
+        // PRH 2018.03.01
+        return TRUE;
+/*
+        $csrfkey = $this->input->post($this->session->flashdata('csrfkey'));
 		if ($csrfkey && $csrfkey === $this->session->flashdata('csrfvalue'))
 		{
 			return TRUE;
@@ -851,6 +856,7 @@ class Auth extends CI_Controller
 		{
 			return FALSE;
 		}
+*/
 	}
 
 	/**
