@@ -16,5 +16,9 @@ application/logs/*
 !application/logs/.htaccess
 /vendor/
 
-/application/config/database.php
-/application/config/email.php
+application/third_party/config/ion_auth.php
+application/third_party/ion_auth/config/ion_auth.php
+application/config/config.php
+application/config/database.php
+application/config/email.php
+
