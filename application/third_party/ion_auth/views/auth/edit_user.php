@@ -23,7 +23,7 @@
   <body class="nav-md">
     <div class="container body">
       <div class="main_container">
-<<<<<<< HEAD
+
 
 
             <?php $this->load->view('inc/sidebar_menu',array('admin'=>$this->ion_auth->is_admin()))?>
@@ -31,7 +31,7 @@
         </div>
 
         <?php $this->load->view('inc/top_menu',array('admin'=>$this->ion_auth->is_admin()))?>
-=======
+
         <div class="col-md-3 left_col">
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
@@ -60,7 +60,7 @@
         </div>
 
         <?php $this->load->view('inc/top_menu')?>
->>>>>>> 8385f44197c203c037676d0ba19bafd96d1d7b90
+
 
         <!-- page content -->
         <div class="right_col" role="main">
@@ -142,7 +142,7 @@
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name"><?php echo lang('create_user_password_label', 'password');?>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                          <?php echo form_input($password,'',array('type'=>'password','class'=>'form-control col-md-7 col-xs-12'));?>
+                          <?php echo form_input($password);?>
                         </div>
                       </div>
 
@@ -150,7 +150,7 @@
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name"><?php echo lang('edit_user_password_confirm_label', 'password_confirm');?>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                          <?php echo form_input($password_confirm,'',array('type'=>'password','class'=>'form-control col-md-7 col-xs-12'));?>
+                          <?php echo form_input($password_confirm,'',array('class'=>'form-control col-md-7 col-xs-12'));?>
                         </div>
                       </div>
 

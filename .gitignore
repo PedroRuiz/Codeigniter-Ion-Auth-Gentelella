@@ -21,7 +21,7 @@ application/logs/*
 >>>>>>> ece0d2adce8bff88f11407d13566d14c85f80350
 application/third_party/config/ion_auth.php
 application/third_party/ion_auth/config/ion_auth.php
-application/config/config.php
+# application/config/config.php
 application/config/database.php
 application/config/email.php
 
