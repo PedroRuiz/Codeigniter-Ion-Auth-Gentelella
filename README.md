@@ -172,10 +172,7 @@ $config['email_config'] = array(
 	'bcc_batch_size' 	=> 200,
 );
 ```
-## Testing the project
-url : [gentelella.pedroruizhidalgo.es](https://genelella.pedroruizhidalgo.es)
 
-user: **admin@admin.com**
 
 password: **password**
 
